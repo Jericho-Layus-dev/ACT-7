@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            
+            
+        }
+        header{
+            background-color: rgb(29, 28, 28);
+            padding: 15px;
+            border-bottom: 2px solid goldenrod;
+            
+            
+        }
+
+        header h1{
+            margin: 0;
+            padding: 0;
+            color: white;
+            letter-spacing: 2px;
+            
+            
+            border-bottom: 2px solid goldenrod;
+            
+
+
+            
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        
+            
+        }
+
+        .Contents {
+            border: 1px ;
+            padding: 50px ;
+            margin : 10px auto 0 auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            box-shadow: 0px 15px 30px gray;
+
+            min-height: calc(100vh - 220px);
+            box-sizing: border-box;
+            
+            
+        }
+
+        .border-pic {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            
+            border: 3px solid #555; 
+            margin: 0 10px;
+            object-fit: cover;
+             
+            cursor: pointer;
+        }
+
+        .border-pic:hover {
+            transform: scale(1.05); 
+            border-color: goldenrod;
+        }
+
+
+        .border-pic.active {
+            transform: scale(1.1); 
+            border-color: goldenrod;
+            
+            box-shadow: 0 0 15px goldenrod; 
+        }
+
+        .p1 {
+            font-size: 18px;
+            color: green;
+        }
+
+        .footer {
+            
+            color:aliceblue;
+            padding: 20px ;
+            font-size: 12px;
+            background-color: rgb(29, 28, 28);
+            margin-top: auto;
+            border-top: 2px solid goldenrod;
+
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+            box-sizing: border-box;
+            
+        }
+
+        .LOGO{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: aliceblue;
+            background-color: rgb(29, 28, 28);
+            border-bottom: 2px solid goldenrod;
+        }
+
+        .header-logo{
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .logo-container {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            width: 90%;
+
+            margin: 40px auto;
+
+            gap: 10px;
+
+            justify-items: center;
+            align-items: center;
+        }
+
+        
+
+       
+
+        
+
+        
+
+        
+
+        
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    
+        <div class="LOGO">
+        <img src = "logo.png" alt ="LOGO" class = "header-logo">
+        
+        <h1>Layus Jericho Creatives</h1>
+        </div>
+        <header>
+        <nav>
+            <a href="index.html" class="HOME">HOME</a>
+            <a href="about.html" class="ABOUT">ABOUT</a>
+            <a href="gallery.html" class="GALLERY">GALLERY</a>
+            <a href="index.html" class="CONTACT">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="Contents">
+        <h1>BRAND LOGO's</h1>
+        <p class = "p1">The Beauty Of Brands.</p>
+
+        <div class = "logo-container">
+            
+            <div>
+            <img src = "chrome.png" class = "border-pic" alt = "Pic 1">
+            <p>CHROME HEARTS</p>
+            </div>
+            <div>
+            <img src = "jnco.png" class = "border-pic"  alt = "Pic 2" >
+            <p>JNCO JEANS</p>
+            </div>
+            <div>
+            <img src = "stone.png" class = "border-pic"  alt = "Pic 3" >
+            <p>STONE ISLAND</p>
+            </div>
+            <div>
+            <img src = "oaklet.png" class = "border-pic"  alt = "Pic 4" >
+            <p>OAKLEY</p>
+            </div>
+           
+            <div>
+            <img src = "oaklet.png" class = "border-pic"  alt = "Pic 4" >
+            <p>OAKLEY</p>
+            </div>
+            <div>
+            <img src = "stone.png" class = "border-pic"  alt = "Pic 3" >
+            <p>STONE ISLAND</p>
+            </div>
+            <div>
+            <img src = "jnco.png" class = "border-pic"  alt = "Pic 2" >
+            <p>JNCO JEANS</p>
+            </div>
+            <div>
+            <img src = "chrome.png" class = "border-pic" alt = "Pic 1">
+            <p>CHROME HEARTS</p>
+            </div>
+            
+            <div>
+            <img src = "jnco.png" class = "border-pic"  alt = "Pic 2" >
+            <p>JNCO JEANS</p>
+            </div>
+             <div>
+            <img src = "chrome.png" class = "border-pic" alt = "Pic 1">
+            <p>CHROME HEARTS</p>
+            </div>
+            <div>
+            <img src = "oaklet.png" class = "border-pic"  alt = "Pic 4" >
+            <p>OAKLEY</p>
+            </div>
+            <div>
+            <img src = "stone.png" class = "border-pic"  alt = "Pic 3" >
+            <p>STONE ISLAND</p>
+            </div>
+
+        </div>
+
+        
+    </main>
+    
+    
+   
+</body>
+    <footer class = "footer">© 2026 Student’s Lastname Name Creatives Creatives</footer>
+</html>

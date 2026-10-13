@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            
+            
+        }
+        header{
+            background-color: rgb(29, 28, 28);
+            padding: 15px;
+            border-bottom: 2px solid goldenrod;
+            
+            
+        }
+
+        header h1{
+            margin: 0;
+            padding: 0;
+            color: white;
+            letter-spacing: 2px;
+            
+            
+            border-bottom: 2px solid goldenrod;
+            
+
+
+            
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+            
+            padding-bottom: 5px; 
+            transition: color 0.2s, border-bottom 0.2s;
+        }
+        
+        
+        nav a:hover, 
+        nav a.active {
+            color: goldenrod;
+            border-bottom: 2px solid goldenrod;
+
+        }
+
+        .Contents {
+            border: 1px ;
+            padding: 50px ;
+            margin : 10px auto 0 auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            box-shadow: 0px 15px 30px gray;
+
+            min-height: calc(100vh - 220px);
+            box-sizing: border-box;
+            
+            
+        }
+
+        .border-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+            border: 3px solid #555; 
+            margin: 0 10px;
+            object-fit: cover;
+             
+            cursor: pointer;
+        }
+
+
+        .border-pic:hover {
+            transform: scale(1.05); 
+            border-color: goldenrod;
+        }
+
+
+        .border-pic.active {
+            transform: scale(1.1); 
+            border-color: goldenrod;
+            
+            box-shadow: 0 0 15px goldenrod; 
+        }
+
+        .paragraph {
+            padding: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto 5px auto;
+            text-align: justify;
+        }
+
+
+        .footer {
+            
+            color:aliceblue;
+            padding: 20px ;
+            font-size: 12px;
+            background-color: rgb(29, 28, 28);
+            margin-top: auto;
+            border-top: 2px solid goldenrod;
+
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+            box-sizing: border-box;
+            
+        }
+
+        .LOGO{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: aliceblue;
+            background-color: rgb(29, 28, 28);
+            border-bottom: 2px solid goldenrod;
+        }
+
+
+        .header-logo{
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+       
+
+        
+
+        
+
+        
+
+        
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    
+        <div class="LOGO">
+        <img src = "logo.png" alt ="LOGO" class = "header-logo">
+        
+        <h1>Layus Jericho Creatives</h1>
+        </div>
+        <header>
+        <nav>
+            <a href="index.html" class="HOME">HOME</a>
+            <a href="about.html" class="ABOUT active">ABOUT</a>
+            <a href="gallery.html" class="GALLERY">GALLERY</a>
+            <a href="about.html" class="CONTACT">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="Contents">
+
+        <div>
+            <h1>ABOUT THE COLLECTION</h1>
+            <img src = "logo.png" class = "border-pic" alt = "Pic 1">
+        </div>
+
+        <p class="paragraph">Step into a world where every clothes is a masterpiece.</p>
+        <p class="paragraph">The Thrifted Wardrobe offers a unique blend if modern innovation and timeless elegance.</p>
+        <p class="paragraph">CLICK LEARN MORE FOR MORE INFOS.</p>
+    </main>
+    
+    
+   
+</body>
+    <footer class = "footer">© 2026 Student’s Lastname Name Creatives Creatives</footer>
+</html>
